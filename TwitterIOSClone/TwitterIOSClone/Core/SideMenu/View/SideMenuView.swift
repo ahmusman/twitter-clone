@@ -24,7 +24,7 @@ struct SideMenuView: View {
             ForEach(sideMenuViewModel.allCases, id: \.rawValue){
                 viewModel in
                 
-                if viewModel == .profile{
+                if viewModel == .profile {
                     NavigationLink {
                         ProfileView()
                     } label: {
@@ -35,7 +35,7 @@ struct SideMenuView: View {
                     Button {
                         print("handle logout here")
                     } label: {
-                        SideMenuView(viewModel: viewModel)
+                        SideMenuRowView(viewModel: viewModel)
                     }
 
                     
